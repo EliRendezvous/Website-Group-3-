@@ -1,0 +1,224 @@
+/* ===== BASE ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Google Sans', sans-serif;
+  background: linear-gradient(135deg, #1a0533, #0a0f1a, #1a0533);
+  background-attachment: fixed;
+  color: #e0e0e0;
+}
+
+/* ===== NAV ===== */
+nav {
+  background: rgba(20, 14, 31, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 24px 80px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+nav a:hover, nav a.active {
+  color: #a855f7;
+  text-shadow: 0 0 10px #a855f7;
+}
+.logo { font-size: 32px; margin-right: 8px; }
+
+/* ===== HOME ===== */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 90vh;
+  padding: 80px;
+  width: 100%;
+}
+.home-left { flex-shrink: 0; }
+.home-circle {
+  width: 550px;
+  height: 550px;
+  border-radius: 16px;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 40px #a855f7;
+  overflow: hidden;
+}
+.home-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+}
+.home-right {
+  flex: 1;
+  text-align: right;
+}
+.home-right h1 {
+  font-size: 100px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.home-right .muted { font-size: 22px; }
+.home-right .desc { font-size: 18px; }
+.home-right .muted,
+.home-right .desc,
+.home-right .label { text-align: right; }
+.home-right .btns { justify-content: flex-end; }
+
+/* ===== SECTIONS ===== */
+.section { padding: 80px; width: 100%; }
+.divider { border: none; border-top: 1px solid #1e293b; width: 100%; }
+
+/* ===== TYPOGRAPHY ===== */
+h1 { font-size: 64px; line-height: 1; margin: 8px 0; }
+h2 { font-size: 48px; margin: 8px 0 32px; }
+h3 { font-size: 20px; margin: 8px 0 4px; }
+.red { color: #a855f7; }
+.label { color: #a855f7; letter-spacing: 3px; font-size: 12px; }
+.sublabel { color: #a855f7; font-size: 13px; letter-spacing: 2px; margin: 32px 0 12px; }
+.muted { color: #aaa; line-height: 1.9; margin-bottom: 16px; }
+.muted-sm { color: #888; font-size: 14px; margin-bottom: 8px; }
+.desc { color: #aaa; line-height: 1.8; margin-top: 16px; }
+
+/* ===== BUTTONS ===== */
+.btns { display: flex; gap: 16px; margin-top: 40px; }
+.btn-red {
+  background: #1a0d3d;
+  color: #fff;
+  padding: 18px 48px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-red:hover { background: #a855f7; box-shadow: 0 0 16px #a855f7; }
+.btn-outline {
+  background: transparent;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 18px 48px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn-outline:hover { border-color: #a855f7; color: #a855f7; box-shadow: 0 0 12px #a855f740; }
+
+/* ===== TAGS ===== */
+.tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.tag {
+  border: 1px solid #333;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #aaa;
+  transition: border-color 0.2s, color 0.2s;
+  cursor: default;
+}
+.tag:hover { border-color: #a855f7; color: #a855f7; }
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+  border-left: 2px solid #333;
+  padding-left: 24px;
+  margin-bottom: 40px;
+  transition: border-color 0.2s;
+}
+.timeline-item:hover { border-color: #a855f7; }
+.date { color: #a855f7; font-size: 12px; letter-spacing: 2px; margin-bottom: 4px; }
+
+/* ===== EXPERIENCE ===== */
+#experience h2 { font-size: 64px; }
+#experience h3 { font-size: 32px; }
+#experience .muted { font-size: 18px; }
+#experience .muted-sm { font-size: 16px; }
+#experience .date { font-size: 14px; }
+#experience .timeline-item {
+  text-align: center;
+  border-left: none;
+  border-top: 2px solid #333;
+  padding-left: 0;
+  padding-top: 24px;
+  margin-bottom: 60px;
+}
+#experience .timeline-item:hover { border-top-color: #a855f7; }
+
+/* ===== GRID & CARDS ===== */
+.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+#interests .grid { grid-template-columns: 1fr 1fr 1fr; }
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+  cursor: default;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.card:hover img { transform: scale(1.08); }
+.card:hover { border-color: #a855f7; box-shadow: 0 0 16px #a855f730; }
+.card-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  padding: 24px 16px 16px;
+}
+.card-overlay h3 { color: #fff; margin-bottom: 4px; }
+.card-overlay p { color: #ccc; font-size: 13px; }
+
+/* ===== CONTACT ===== */
+.contact-links { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: transparent;
+  padding: 28px 0;
+  border: none;
+  border-bottom: 1px solid #2a2a3a;
+  text-decoration: none;
+  color: #e0e0e0;
+  width: 100%;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+.contact-link:hover { color: #a855f7; border-bottom: 1px solid #a855f7; }
+.contact-link span { font-size: 32px; }
+.platform { font-size: 13px; color: #888; letter-spacing: 2px; margin-bottom: 4px !important; }
+.contact-link p:last-child { font-size: 22px; }
+#contact h2 { font-size: 64px; }
+#contact .contact-link span { font-size: 40px; }
+#contact .contact-link p:last-child { font-size: 28px; }
+#contact .platform { font-size: 15px; }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 32px;
+  color: #444;
+  font-size: 12px;
+  border-top: 1px solid #1e293b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav { padding: 16px 24px; flex-wrap: wrap; gap: 12px; }
+  .home-section { flex-direction: column; padding: 40px 24px; }
+  .home-circle { width: 280px; height: 280px; }
+  .home-right { text-align: left; }
+  .home-right h1 { font-size: 48px; }
+  .home-right .muted, .home-right .desc, .home-right .label { text-align: left; }
+  .home-right .btns { justify-content: flex-start; }
+  .section { padding: 60px 24px; }
+  h2 { font-size: 36px; }
+  #interests .grid { grid-template-columns: 1fr; }
+}
