@@ -1,0 +1,649 @@
+/* =========================
+    BASE / GLOBAL STYLES
+========================= */
+/* Reset default browser styles and set global font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Enable smooth scrolling when clicking links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+          BODY
+========================= */
+/* Main page background and text color */
+body {
+  background: #0b1220;
+  color: white;
+}
+
+/* =========================
+          LAYOUT
+========================= */
+/* Centers content and limits max width */
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+          PAGES HEADER
+========================= */
+/* Section style with dark background */
+.section {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #0f172a;
+}
+
+/* Alternate section background */
+.section2 {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #0b1220;
+}
+
+/* Title style for each section */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 32px;
+  font-weight: 1000;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Decorative lines beside section titles */
+.section-title::before,
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, #1665ff, #892bef);
+}
+
+/* =========================
+          NAVBAR
+========================= */
+/* Sticky top navigation bar */
+.navbar {
+  background: #020817;
+  border-bottom: 1px solid #1a2a44;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+
+/* Logo text styling with gradient */
+.logo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(to bottom, #892bef, #1665ff); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Logo link style */
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navbar container layout */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Navigation links container */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Navigation link style */
+nav a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 1s ease;
+}
+
+/* Animated underline effect */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #1665ff, #892bef);
+  transition: width 0.3s ease;
+}
+
+/* Gradient hover effect */
+nav a:hover {
+  background: linear-gradient(to right, #1665ff, #892bef); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Expand underline on hover */
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a.active {
+  background: linear-gradient(to right, #1665ff, #892bef); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+nav a.active::after {
+  width: 100%;
+}
+
+/* =========================
+          HOMEPAGE
+========================= */
+/* Main homepage layout (text + image) */
+.homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Intro text */
+.homepage h3 {
+  font-size: 30px;
+}
+
+/* Name/title with gradient text */
+.homepage h1 {
+  font-size: 55px;
+  font-style: italic;
+  background: linear-gradient(to right, #1665ff, #892bef); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Subtitle */
+.homepage h2 {
+  margin: 10px 0;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+/* Description text */
+.homepage p {
+  margin: 15px 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+/* Call-to-action button */
+.homepage button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #1665ff, #892bef);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Profile image container (glow effect) */
+.homepage-img {
+  max-width: 400px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1665ff, #892bef);
+  box-shadow: 
+    0 0 50px rgba(22, 101, 255, 0.4),
+    0 0 75px rgba(137, 43, 239, 0.4);
+}
+
+/* Profile image */
+.homepage-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #010c1c;
+  padding: 5px;
+  display: block;
+}
+
+/* =========================
+          ABOUT
+========================= */
+/* About section layout */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+/* About image */
+.about-container img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-image img{
+  border-radius: 50px;
+}
+
+/* About text container */
+.about-text {
+  flex: 1;
+}
+
+/* About paragraph styling */
+.about-paragraph {
+  margin: auto;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* =========================
+          SKILLS
+========================= */
+/* Skills section container */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Each skill category block */
+.skill-category {
+  text-align: left;
+  width: 100%;
+}
+
+/* Skill category header */
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+/* Header text spacing */
+.header-text {
+  line-height: 25px;
+}
+
+/* Subtitle under skill header */
+.header-text p {
+  margin-left: 1.5px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Grid layout for skill cards */
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px;
+  padding: 10px 0;
+}
+
+/* Technical skill card */
+.tech-card {
+  background: #111827;
+  border: 1px solid #1a2a44;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(22, 101, 255, 0.8);
+}
+
+/* Skill icon image */
+.tech-icon img {
+  width: 100%;
+  padding: 2px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Technical skill title */
+.tech-card h3 {
+  font-size: 15px;
+  padding: 25px 0 10px 0;
+}
+
+/* Technical skill description */
+.tech-card p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #9ca3af;
+  padding: 0 20px 10px 20px;
+}
+
+/* Soft skill card layout */
+.soft-card {
+  display: flex;
+  gap: 30px;
+  background: #111827;
+  border: 1px solid #1a2a44;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 330px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.soft-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(137, 43, 239, 0.8);
+}
+
+/* Soft skill icon */
+.soft-icon {
+  display: flex;
+  margin-left: 20px;
+}
+
+/* Soft skill image */
+.soft-icon img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Soft skill title */
+.soft-card h3 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+/* Soft skill description */
+.soft-card p {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: left;
+  color: #9ca3af;
+}
+
+/* Color utility classes */
+.blue {
+  color: #1665ff;
+}
+
+.purple {
+  color: #892bef;
+}
+
+/* =========================
+          PROJECTS
+========================= */
+/* Project section spacing */
+.project {
+  padding-top: 25px;
+  padding-bottom: 12.5px;
+}
+
+/* Project card container */
+.project-card {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  background: #111827;
+  border: 1px solid #1a2a44;
+  border-radius: 10px;
+}
+
+/* Project image */
+.project-card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #1a2a44;
+}
+
+/* Project title */
+.project-card h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  text-align: left;
+  background: linear-gradient(to right, #1665ff, #892bef); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Project description */
+.project-card p {
+  line-height: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Project button */
+.project-card button {
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(to right, #1665ff, #892bef);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+          CONTACT
+========================= */
+/* Contact section layout */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 25px;
+  padding-bottom: 12.5px;
+  flex-wrap: wrap;
+}
+
+/* Contact card */
+.contact-card {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1a2a44;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Contact hover effect */
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 0 25px rgba(22, 101, 255, 0.4),
+    0 0 25px rgba(137, 43, 239, 0.4);
+}
+
+/* Contact title */
+.contact-card h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Contact text */
+.contact-card p {
+  font-size: 15px;
+  color: #9ca3af;
+}
+
+/* =========================
+          FOOTER
+========================= */
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1a2a44;
+  background: #020817;
+}
+
+/* =========================
+          MEDIA
+========================= */
+@media (max-width: 768px) {
+
+  /* ================= NAVBAR ================= */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* ================= HOMEPAGE ================= */
+  .homepage {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .homepage h1 {
+    font-size: 38px;
+  }
+
+  .homepage h2 {
+    font-size: 18px;
+  }
+
+  .homepage h3 {
+    font-size: 24px;
+  }
+
+  .homepage p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .homepage-img {
+    max-width: 280px;
+  }
+
+  /* ================= ABOUT ================= */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* ================= SKILLS ================= */
+  .skills-container {
+    width: 90%;
+  }
+
+  .skill-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .skill-grid {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tech-card {
+    max-width: 160px;
+  }
+
+  .soft-card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 280px;
+    gap: 15px;
+  }
+
+  .soft-icon {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* ================= PROJECTS ================= */
+  .project-card {
+    max-width: 300px;
+  }
+
+  /* ================= CONTACT ================= */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
