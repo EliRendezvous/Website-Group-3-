@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Janelle Verceles | IT Portfolio</title>
+  <link rel="stylesheet" href="style-janelle.css">
+</head>
+<body>
+
+<div class="orb-bg"></div>
+
+<nav class="navbar">
+  <div class="logo">JANELLE VERCELES</div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+  <!-- Hero Section with Profile Picture -->
+  <div id="home" class="hero">
+    <div class="hero-badge"><i class="fas fa-terminal"></i> IT STUDENT // CYBERSECURITY & WEB</div>
+    
+    <!-- Profile picture section with modern frame and user image placeholder (actual image embed using a generated creative portrait) -->
+    <div class="profile-picture">
+      <div class="avatar-frame">
+        <!-- 
+          Included a stylish SVG data URL as profile image — a friendly, modern tech avatar illustration 
+          representing Janelle, combined with a fallback icon. This creates a visually appealing "picture" without external dependencies.
+          You can replace src with actual photo of Janelle.
+        -->
+        <img class="avatar-img" src="images-janelle/pfp.jpg">
+      </div>
+    </div>
+    
+    <h1>Janelle A. Verceles</h1>
+    <div class="typed-container">
+      <span>✦</span>
+      <span class="typed-text">Building the future with code & creativity</span>
+    </div>
+    <p class="hero-desc">Dedicated IT student passionate about web development, cybersecurity, and turning ideas into functional designs. Let's innovate together.</p>
+    <div class="btn-group">
+      <button class="btn-primary" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Get in touch <i class="fas fa-arrow-right"></i></button>
+      <button class="btn-outline" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth'})">Explore my work</button>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <section id="about">
+    <div class="section-header">
+      <i class="fas fa-user-astronaut"></i>
+      <h2>About Me</h2>
+    </div>
+    <div class="card">
+      <p style="font-size: 18px; margin-bottom: 20px;">I am <strong>Janelle A. Verceles</strong>, a dedicated IT student with a strong passion for technology and creativity. I enjoy exploring how systems work, especially in web development and cybersecurity. I am eager to learn new skills and grow in the field of Information and Communication Technology.</p>
+      <div class="grid-2col" style="margin-top: 16px;">
+        <div>
+          <h4 style="color:#38bdf8; margin-bottom: 12px;"><i class="fas fa-bullseye"></i> Goals</h4>
+          <ul class="skill-list">
+            <li><i class="fas fa-shield-alt"></i> Become skilled IT professional in cybersecurity or web dev</li>
+            <li><i class="fas fa-code"></i> Improve programming & technical abilities</li>
+            <li><i class="fas fa-project-diagram"></i> Build real-world projects & gain industry experience</li>
+            <li><i class="fas fa-graduation-cap"></i> Continue learning & growing in tech</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#38bdf8; margin-bottom: 12px;"><i class="fas fa-book-open"></i> My Story</h4>
+          <p>My journey in IT started with curiosity about how websites and computers work. Over time, I developed interest in coding and designing websites. Each project I complete motivates me to improve more. I aim to turn my passion into a successful career in technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (technical + soft split) -->
+  <section id="skills">
+    <div class="section-header">
+      <i class="fas fa-laptop-code"></i>
+      <h2>Skills & Expertise</h2>
+    </div>
+    <div class="grid-2col">
+      <div class="card">
+        <h3 style="color:#38bdf8; margin-bottom: 18px;"><i class="fas fa-microchip"></i> Technical Skills</h3>
+        <ul class="skill-list">
+          <li><i class="fab fa-html5"></i> HTML (Basic to Intermediate)</li>
+          <li><i class="fab fa-css3-alt"></i> CSS (Responsive Design Basics)</li>
+          <li><i class="fas fa-chart-line"></i> Basic Networking Concepts</li>
+          <li><i class="fas fa-paint-brush"></i> UI/UX Fundamentals (beginner level)</li>
+          <li><i class="fas fa-file-alt"></i> Microsoft Office (Word, PowerPoint, Excel)</li>
+          <li><i class="fas fa-globe"></i> Computer Literacy & Web Research</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:#38bdf8; margin-bottom: 18px;"><i class="fas fa-users"></i> Soft Skills</h3>
+        <div class="interest-grid">
+          <span class="tag">Time Management</span>
+          <span class="tag">Communication</span>
+          <span class="tag">Adaptability</span>
+          <span class="tag">Creativity</span>
+          <span class="tag">Critical Thinking</span>
+          <span class="tag">Team Collaboration</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+        <div style="margin-top: 24px;">
+          <h4 style="color:#38bdf8; font-size: 16px;">➕ Additional Competencies</h4>
+          <p style="margin-top: 12px;">Basic Web Design · Computer Literacy · Creativity in Design · Team Collaboration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Achievements -->
+  <section id="experience">
+    <div class="section-header">
+      <i class="fas fa-briefcase"></i>
+      <h2>Experience & Activities</h2>
+    </div>
+    <div class="card">
+      <div class="grid-2col">
+        <div>
+          <h4><i class="fas fa-code-branch"></i> Hands-on Projects</h4>
+          <ul class="skill-list" style="margin-top: 10px;">
+            <li><i class="fas fa-check-circle"></i> Basic experience in HTML, CSS, and web design</li>
+            <li><i class="fas fa-check-circle"></i> School projects involving website creation & digital presentations</li>
+            <li><i class="fas fa-check-circle"></i> Hands-on activities in IT subjects: networking & computer systems</li>
+          </ul>
+        </div>
+        <div>
+          <h4><i class="fas fa-trophy"></i> Soft skills growth</h4>
+          <ul class="skill-list" style="margin-top: 10px;">
+            <li><i class="fas fa-users"></i> Collaborated with peers on tech-based workshops</li>
+            <li><i class="fas fa-chalkboard-user"></i> Participated in ICT events enhancing communication & leadership</li>
+            <li><i class="fas fa-brain"></i> Self-paced learning: online tutorials & design challenges</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests, Hobbies & Passion -->
+  <section>
+    <div class="section-header">
+      <i class="fas fa-heart"></i>
+      <h2>Interests & Passions</h2>
+    </div>
+    <div class="grid-2col">
+      <div class="card">
+        <h3><i class="fas fa-music"></i> Hobbies</h3>
+        <div class="interest-grid" style="margin-top: 16px;">
+          <span class="tag">Drawing & digital art</span>
+          <span class="tag">Exploring websites & designs</span>
+          <span class="tag">Watching tech tutorials</span>
+          <span class="tag">Learning new coding concepts</span>
+          <span class="tag">Gaming / strategy games</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-fire"></i> My Passion</h3>
+        <p>I am passionate about technology and creativity, especially in building websites and digital designs that are both functional and visually appealing. I enjoy turning ideas into real projects through coding and design. I love making tech intuitive and inspiring others through my journey.</p>
+        <p style="margin-top: 14px;"><i class="fas fa-lightbulb"></i> Interests: Technology & Innovation · Web Development · Cybersecurity · Graphic Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact with updated credentials -->
+  <section id="contact">
+    <div class="section-header">
+      <i class="fas fa-envelope"></i>
+      <h2>Let's Connect</h2>
+    </div>
+    <div class="card">
+      <div class="contact-flex">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope" style="color:#38bdf8;"></i> janelleverceles11@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> 09544623476</p>
+          <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/jan.elle.887342" target="_blank" style="color:#cbd5e6; text-decoration: none;">facebook.com/jan.elle.887342</a></p>
+          <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/itsme_nellxy" target="_blank" style="color:#cbd5e6; text-decoration: none;">@itsme_nellxy</a></p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/jan.elle.887342" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/itsme_nellxy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:janelleverceles11@gmail.com" aria-label="Email"><i class="fas fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Janelle A. Verceles — Building the future with code & creativity | IT Portfolio</p>
+  </footer>
+</div>
+
+<script>
+  // Scroll reveal animation using Intersection Observer
+  const sections = document.querySelectorAll('section');
+  const hero = document.querySelector('.hero');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -30px 0px" });
+  
+  sections.forEach(section => observer.observe(section));
+  if(hero) hero.style.opacity = "1";
+  
+  // Smooth hover interaction on cards
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transition = 'all 0.25s ease';
+    });
+  });
+  
+  // Smooth navigation adjustments
+  const contactBtn = document.querySelector('.btn-primary');
+  if(contactBtn) {
+    contactBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+  const exploreBtn = document.querySelector('.btn-outline');
+  if(exploreBtn) {
+    exploreBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+  
+  // make sure sections visible on load
+  window.addEventListener('load', () => {
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 100) {
+        section.classList.add('visible');
+      }
+    });
+    // ensure typed text stable on small devices
+    const typedSpan = document.querySelector('.typed-text');
+    if (typedSpan && window.innerWidth < 600) {
+      typedSpan.style.whiteSpace = 'normal';
+      typedSpan.style.borderRight = 'none';
+    }
+  });
+</script>
+</body>
+</html>
